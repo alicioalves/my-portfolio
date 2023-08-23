@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	// Modules
-	modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/image'],
+	modules: [
+		'@nuxtjs/tailwindcss',
+		'@nuxtjs/i18n',
+		'@nuxt/image',
+		'@nuxt/content'
+	],
 
 	// Devtools
 	devtools: { enabled: true },
