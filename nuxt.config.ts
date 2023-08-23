@@ -5,7 +5,8 @@ export default defineNuxtConfig({
 		'@nuxtjs/tailwindcss',
 		'@nuxtjs/i18n',
 		'@nuxt/image',
-		'@nuxt/content'
+		'@nuxt/content',
+		'@nuxtjs/color-mode'
 	],
 
 	// Devtools
@@ -14,5 +15,12 @@ export default defineNuxtConfig({
 	// i18n
 	i18n: {
 		/* module options */
+	},
+
+	// Color Mode
+	colorMode: {
+		preference: 'system',
+		fallback: 'dark',
+		classPrefix: ''
 	}
 })
