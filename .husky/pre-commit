@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+pnpm lint
+
+FILES=
+[ -z "" ] && exit 0
+
+# Prettify all selected files
+echo "" | xargs ./node_modules/.bin/prettier --ignore-unknown --write
+
+# Add back the modified/prettified files to staging
+echo "" | xargs git add
+
+exit 0
